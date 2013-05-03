@@ -1,10 +1,5 @@
 package com.github.mcheely.maven.requirejs;
 
-import java.io.File;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Map;
-
 import org.apache.maven.execution.MavenSession;
 import org.apache.maven.plugin.AbstractMojo;
 import org.apache.maven.plugin.MojoExecutionException;
@@ -14,11 +9,16 @@ import org.apache.maven.shared.filtering.MavenFilteringException;
 import org.mozilla.javascript.ErrorReporter;
 import org.mozilla.javascript.EvaluatorException;
 
+import java.io.File;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Map;
+
 /**
  * Mojo for running r.js optimization.
  *
  * @goal optimize
- * @phase process-classes
+ * @phase process-sources
  *
  */
 public class OptimizeMojo extends AbstractMojo {
