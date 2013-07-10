@@ -19,6 +19,7 @@ import java.util.Map;
  *
  * @goal optimize
  * @phase process-sources
+ * @ThreadSafe=true
  *
  */
 public class OptimizeMojo extends AbstractMojo {
